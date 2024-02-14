@@ -32,3 +32,41 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/categories/3
 X-API-Key:RAHASIA
 Content-Type: application/json
+
+###  GET ALL CUSTOMERS
+GET http://localhost:3000/api/customers
+X-API-Key:RAHASIA
+Accept: application/json
+
+### CREATE NEW CUSTOMER
+
+POST http://localhost:3000/api/customers
+X-API-Key:RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "address": "Jakrata"
+}
+
+### GET CUSTOMER BY ID
+GET http://localhost:3000/api/customers/1
+X-API-Key:RAHASIA
+Accept: application/json
+
+### UPDATE CUSTOMER BY ID
+PUT http://localhost:3000/api/customers/1
+X-API-Key:RAHASIA
+Content-Type: application/json
+
+{
+  "name": "Ridhal Fajri",
+  "address": "Bogor"
+}
+
+### DELETE CUSTOMER BY ID
+DELETE http://localhost:3000/api/customers/1
+X-API-Key:RAHASIA
+Content-Type: application/json
+

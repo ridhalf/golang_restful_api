@@ -2,10 +2,10 @@ package controller
 
 import (
 	"github.com/julienschmidt/httprouter"
-	http "net/http"
+	"net/http"
 )
 
-type CategoryController interface {
+type CustomerController interface {
 	Create(writer http.ResponseWriter, request *http.Request, params httprouter.Params)
 	Update(writer http.ResponseWriter, request *http.Request, params httprouter.Params)
 	Delete(writer http.ResponseWriter, request *http.Request, params httprouter.Params)

@@ -13,8 +13,8 @@ type CategoryControllerImpl struct {
 	CategoryService service.CategoryService
 }
 
-func NewCategoryController(categoryService service.CategoryService) CategoryController {
-	return &CategoryControllerImpl{
+func NewCategoryController(categoryService service.CategoryService) CategoryControllerImpl {
+	return CategoryControllerImpl{
 		CategoryService: categoryService,
 	}
 }
